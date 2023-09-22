@@ -13,6 +13,7 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    position: fixed;
 }
 .navbartop ul li{
     display: flex;
@@ -40,26 +41,26 @@
     align-items: center;
 }
 .welcomecontainer h1{
-    font-size: 4rem;
+    font-size: 64px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
   
   
 }
 .welcomecontainer p{
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: 200;
     font-style: italic;
     color: #be3144;
 }
 .projectsection{
     text-align: center;
-    padding: 10rem 2rem;
+    padding: 140px 32px;
     background: #45567d;
 }
 .projectsectionheader{
     max-width: 800px;
-    margin: 0 auto 6rem auto;
+    margin: 0px auto 96px auto;
     border-bottom: 0.2rem solid #f0f0f0;
 }
 .projectsection h2{
@@ -69,14 +70,51 @@
     text-align: center;
 }
 .projectsectionbody{
+   
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   
 
 }
 .projectsectionbodyitems{
-
+  
+   height: 100%;
+   width: 30%;
+   margin: 20px;
+   
 }
-.projectsectionfooter button{
+.projectsectionbodyitems img{
+    height: 350px;
+   width: 380px;
+   background: #303841;
+    box-shadow: 3px 5px 2px 0px #060606;
+    border-radius: 2px; 
     
+  
 }
+.projectsectionbodyitems a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding: 2px 0.5px;
+}
+
+.projectsectionfooter button{
+    background-color: #303841;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+.projectsectionfooter button:hover{
+    background-color: #be3144;
+    font-size: 20px;
+    transition: 0.3s ease-out;
+}
+
 .Contacttext{
 
 }

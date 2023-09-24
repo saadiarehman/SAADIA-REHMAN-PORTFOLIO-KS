@@ -2,14 +2,16 @@
   margin: 0;
   padding: 0;
   color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .navbartop {
   background-color: #be3144;
-  font-family: "Poppins", sans-serif;
+
+
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.2;
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -35,8 +37,8 @@
 
 .welcomecontainer {
   width: 100%;
-  height: 120vh;
-  background-color: #3a3d40;
+  height: 930px;
+  background-color: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +52,7 @@
 }
 
 .welcomecontainer p {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 200;
   font-style: italic;
   color: #be3144;
@@ -63,13 +65,14 @@
 }
 
 .projectsectionheader {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0px auto 96px auto;
   border-bottom: 0.2rem solid #f0f0f0;
+  padding: 5px;
 }
 
 .projectsection h2 {
-  font-size: 3rem;
+  font-size: 45px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-align: center;
@@ -79,28 +82,54 @@
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 75%;
+  margin-left: 275px;
+  justify-content: space-between;
 }
 
 .projectsectionbodyitems {
-
+  background-color: rgb(46 54 62);
   height: 100%;
   width: 30%;
-  margin: 20px;
+  margin-top: 45px;
+
 }
 
 .projectsectionbodyitems img {
-  height: 350px;
-  width: 500px;
-  background: #303841;
-  box-shadow: 3px 5px 2px 0px #060606;
+  height: 400px;
+  width: 414px;
+
+
   border-radius: 2px;
 }
 
 .projectsectionbodyitems a {
+  display: block;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.projectsectionbodyitems p {
+  background-color: #303841;
+  padding: 16px 8px;
+}
+
+
+.code {
+  display: none;
+}
+
+.projectsectionbodyitems p:hover {
+  .code {
+    display: block;
+    color: rgb(201, 98, 98);
+    transition: 0.3s ease-out;
+    display: inline;
+    font-weight: bold;
+  }
+
+
 }
 
 .projectsectionfooter button {
@@ -109,7 +138,9 @@
   padding: 1rem 2rem;
   border-radius: 2px;
   font-size: 15px;
+  margin-top: 85px;
 }
+
 
 .projectsectionfooter button:hover {
   background-color: #be3144;
@@ -117,8 +148,11 @@
   transition: 0.3s ease-out;
 }
 
+
+
+
 .Contacttext {
-  border-bottom: 4px solid red;
+
   background-color: #303841;
   display: flex;
   flex-direction: column;
@@ -126,7 +160,10 @@
   align-items: center;
   width: 100%;
   height: 700px;
+
 }
+
+.Contacttextheader {}
 
 .Contacttextheader h1 {
   font-size: 75px;
@@ -135,34 +172,39 @@
 .Contacttextheader p {
   font-style: italic;
   font-size: 25px;
-  padding: 8px 0px 0px 200px;
+  padding: 8px 0px 20px 200px;
 }
 
 .Contacticons {
-  margin-top: 50px;
+
+  font-size: 25px;
+  text-shadow: 2px 2px 1px #1f1f1f;
+
+  width: 50%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
 
 }
+
 
 .Contacticons a {
   text-decoration: none;
-  font-size: 32px;
-  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.2s ease-out;
+
 
 }
 
-.Contacticons a:hover {}
+.Contacticons a:hover {
 
-.Contacticonsitems {
-  margin: 0px 50px 0px 0px;
 
+  margin-top: 10px;
 }
 
-.Contacticonsitems p {
-  margin-left: 5px;
 
-}
 
 .Contactfooter {
+  border-top: 4px solid red;
   background-color: #303841;
   font-size: larger;
   display: flex;
